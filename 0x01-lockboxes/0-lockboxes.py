@@ -1,7 +1,7 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 
 def canUnlockAll(boxes):
-
+    
     if type(boxes) is not list:
         return False
     elif (len(boxes)) == 0:
