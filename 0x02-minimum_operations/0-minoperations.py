@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 '''
-Given a number n and return number of operations to get n H characters in the file.
+Given a number n
+return number of operations to get n H characters in the file.
 '''
 
 
