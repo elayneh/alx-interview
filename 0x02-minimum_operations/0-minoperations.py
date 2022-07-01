@@ -1,21 +1,24 @@
 #!/usr/bin/python3
 
 '''
-Given n number of characters and return minimum number of operations
+Given a number n and return number of operations to get n H characters in the file.
 '''
 
 
-def minoperations(n):
+def minOperations(n):
     '''
-    return minimum operations to get n number of Hs
+    returns min operations to get n Hs
     '''
-    operations = 0
+    opr = 0
     index = 2
     if n < 2:
         return 0
-    while index < n + 1:
+    while (index < n + 1):
+        # checks if the number id dividable by 2
         while n % index == 0:
-            operations += index
-            n = n / index
+            # If so add number of smaller problems to the operations(op)
+            opr += index
+            # Create the smaller problem needed to get to n
+            n /= index
         index += 1
-    return operations
+    return opr
